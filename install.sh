@@ -35,7 +35,8 @@ if [ ! -d "$bin_dir" ]; then
 fi
 
 curl --fail --location --progress-bar --output "$target_path.zip" "$download_url"
-unzip -d "$bin_dir" -o "$target_path.zip"
+# unzip -o -d /local/bin ipgw.zip
+unzip -o -d "$bin_dir"  "$target_path.zip"
 chmod +x "$target_path"
 rm "$target_path.zip"
 
