@@ -37,7 +37,7 @@ fi
 curl --fail --location --progress-bar --output "$target_path.zip" "$download_url"
 # unzip -o -d ./local/bin ipgw.zip
 unzip -o -d "$bin_dir"  "$target_path.zip"
-chmod +x "$target_path"
+chmod +x "$target_path"  # 可执行权限+写入路径  直接ipgw，否则需要目录下 ./ipgw
 rm "$target_path.zip"
 
 echo "ipgw was installed successfully to $target_path"
