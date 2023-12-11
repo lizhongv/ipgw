@@ -27,7 +27,7 @@ fi
 download_url="https://github.com/neucn/ipgw/releases/latest/download/ipgw-${target}.zip"
 
 # bin_dir="/usr/local/bin"
-bin_dir="/local/bin"
+bin_dir="./local/bin"
 target_path="$bin_dir/ipgw"
 
 if [ ! -d "$bin_dir" ]; then
@@ -35,7 +35,7 @@ if [ ! -d "$bin_dir" ]; then
 fi
 
 curl --fail --location --progress-bar --output "$target_path.zip" "$download_url"
-# unzip -o -d /local/bin ipgw.zip
+# unzip -o -d ./local/bin ipgw.zip
 unzip -o -d "$bin_dir"  "$target_path.zip"
 chmod +x "$target_path"
 rm "$target_path.zip"
