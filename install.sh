@@ -26,7 +26,8 @@ fi
 # 利用 GitHub API 获取最新 Releases 的版本号
 download_url="https://github.com/neucn/ipgw/releases/latest/download/ipgw-${target}.zip"
 
-bin_dir="/usr/local/bin"
+# bin_dir="/usr/local/bin"
+bin_dir="/local/bin"
 target_path="$bin_dir/ipgw"
 
 if [ ! -d "$bin_dir" ]; then
