@@ -35,6 +35,15 @@ curl -fsSL https://raw.githubusercontent.com/neucn/ipgw/master/install.sh | sh
 
 其他系统的同学请 clone 到本地后自行编译
 
+如从 https://github.com/neucn/ipgw/releases 下载，安装包 `ipgw-linux-amd64.zip`
+
+将安装包 `ipgw-linux-amd64.zip` 解压到目录 `./local/bin` 
+
+```shell
+unzip -o -d ./local/bin ipgw.zip
+chmod +x ./local/bin/ipgw
+export PATH="./local/bin:$PATH"
+```
 # 快速开始
 
 > 须知：本项目的最初目的仅在于满足作者本人的日常使用，因此工具的输出文本中同时存在中英文。
