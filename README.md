@@ -40,9 +40,13 @@ curl -fsSL https://raw.githubusercontent.com/neucn/ipgw/master/install.sh | sh
 将安装包 `ipgw-linux-amd64.zip` 解压到目录 `./local/bin` 
 
 ```shell
-unzip -o -d ./local/bin ipgw.zip
+unzip -o -d ./local/bin ipgw-linux-amd64.zip
 chmod +x ./local/bin/ipgw
 export PATH="./local/bin:$PATH"
+
+unzip -o -d ./ ipgw-linux-amd64.zip
+chmod +x ./ipgw
+export PATH="./:$PATH"
 ```
 # 快速开始
 
